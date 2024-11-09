@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0000000e;
+    margin: 0;
+    padding: 20px;
+    padding-top: 150px; /* Добавляем отступ сверху для всей страницы */
+}
+
+.hotel-room {
+    background-color: #00000000;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* Используем Flexbox для расположения элементов */
+    align-items: center; /* Выравниваем элементы по вертикали */
+    margin-top: 50px;
+    margin-left: 10%; /* Уменьшаем отступ слева для маленьких экранов */
+    width: 80%; /* Устанавливаем ширину блока */
+}
+
+.hotel-room img {
+    width: 50%; /* Устанавливаем ширину изображения */
+    height: auto; /* Автоматически подстраиваем высоту, чтобы сохранить пропорции */
+    margin-right: 5%; /* Добавляем отступ между изображением и информацией */
+    border-radius: 8px;
+}
+
+.room-info {
+    flex-grow: 1; /* Позволяет информации занимать оставшееся пространство */
+    margin-left: 5%;
+}
+
+.room-info h2 {
+    margin-top: 0;
+}
+
+.room-info p {
+    margin: 10px 0;
+}
+
+.room-info button {
+    background-color: #00000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 2px solid white;
+    margin-top: 10px;
+}
+
+.room-info button:hover {
+    background-color: #a3a3a3;
+}
+
+.top-line {
+    position: fixed; /* Фиксируем элемент в верхней части страницы */
+    top: 0; /* Прижимаем его к верхнему краю */
+    left: 0; /* Прижимаем его к левому краю */
+    width: 100%; /* Занимает всю доступную ширину */
+    background-color: #0000000e; /* Добавляем фон, чтобы контент не просвечивал */
+    z-index: 1000; /* Устанавливаем высокий z-index, чтобы элемент был над другими элементами */
+    transition: top 0.3s ease-in-out; /* Добавляем плавный переход */
+}
+
+.wrapper {
+    padding-top: 60px; /* Добавляем отступ сверху, чтобы контент не заходил под фиксированный элемент */
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+@media (max-width: 767px) {
+    .hotel-room {
+        flex-direction: column;
+        margin-left: 5%; /* Уменьшаем отступ слева для маленьких экранов */
+        width: 90%; /* Увеличиваем ширину блока для маленьких экранов */
+    }
+
+    .hotel-room img {
+        width: 100%; /* Устанавливаем ширину изображения на 100% для маленьких экранов */
+        margin-right: 0; /* Убираем отступ между изображением и информацией */
+    }
+
+    .room-info {
+        padding: 15px;
+        margin-left: 0;
+    }
+
+    .room-info h2 {
+        font-size: 20px;
+    }
+
+    .room-info h3 {
+        font-size: 16px;
+    }
+
+    .button-start {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .hotel-room {
+        flex-direction: row;
+        margin-left: 15%; /* Увеличиваем отступ слева для средних экранов */
+        width: 70%; /* Уменьшаем ширину блока для средних экранов */
+    }
+
+    .hotel-room img {
+        width: 50%;
+    }
+
+    .room-info {
+        width: 50%;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hotel-room {
+        flex-direction: row;
+        margin-left: 7%; /* Увеличиваем отступ слева для больших экранов */
+        width: 50%; /* Уменьшаем ширину блока для больших экранов */
+    }
+
+    .hotel-room img {
+        width: 50%;
+    }
+
+    .room-info {
+        width: 50%;
+        text-align: left;
+    }
+}
+

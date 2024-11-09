@@ -1,0 +1,78 @@
+.container1 {
+	margin: auto;
+	max-width: 840px;
+}
+.container-top {
+	display: flex;
+	justify-content: space-between;
+}
+.top-line {
+    position: fixed; /* Изменено на fixed */
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 1.7rem 0;
+    background-color: #00000000; /* Добавьте фон, если нужно */
+    transition: top 0.3s ease-in-out; /* Добавьте анимацию для плавного исчезновения */
+}
+.logo {
+	border: 3px solid #E1E6F7;
+	border-radius: 10em;
+	width: 54px;
+	height: 54px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: .75;
+}
+.logo img{
+	width: 25px;
+	height: auto;
+}
+.main-mnu {
+	display: flex;
+	margin-top: 15px;
+	font-size: 19px;
+	margin-right: -16px;
+}
+.main-mnu li {
+	list-style: none;
+}
+.main-mnu a {
+	color: #bbbec9;
+	padding: 16px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-decoration: none;
+	font-weight: 200;
+	outline: none;
+}
+.main-mnu a:hover {
+	text-decoration: underline;
+}
+
+.button-start{
+	font-family: Arial;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: calc(var(--index) * .7);
+	letter-spacing: -.02vw;
+	padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
+	background-color: transparent;
+	color: white;
+	border-radius: 10em;
+	border: rgb(255 255 255 / .4) 3px solid;
+	outline: none;
+	cursor: pointer;
+	justify-content: center;
+    align-items: center;
+}
+
+.bt1 {
+	display: flex;
+	padding-right: 100px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+}
+
+

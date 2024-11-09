@@ -1,0 +1,32 @@
+.wrapper {
+    margin: 30px 35px 0 35px; /* Верхний отступ 100px, правый отступ 35px, левый отступ 0, нижний отступ 0 */
+}
+
+.wrapper p {
+    margin-top: 30px;
+}
+
+.text-frame {
+    border-radius: 10px; /* Скругление углов */
+    border: 2px solid white; /* Белая рамка */
+    padding: 20px;
+    width: 100%;
+    max-width: 1800px;
+    background-color: rgba(0, 0, 0, 0); /* Полупрозрачный фон */
+    color: white; /* Белый текст */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-frame p {
+    font-size: 18px; /* Увеличенный размер шрифта */
+    margin-top: 10px;
+}
+
+.text-frame h2 {
+    margin-top: 20px;
+    color: rgb(217, 237, 247);
+}
+
+.text-frame h1 {
+    color: rgb(217, 237, 247);
+}
